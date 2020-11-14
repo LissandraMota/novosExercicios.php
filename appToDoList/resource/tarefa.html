@@ -1,0 +1,19 @@
+<!-- modelo da linha de tarefa -->
+<tr>
+    <td id="status-#ID"> #STATUS </td> <!--a ancora vai ser substituida pelo id-->
+    <td> #ID </td>
+    <td> #NOME </td>
+    <td> #DATALIMITE </td>
+    <td>   
+        <!--ancora + id que vai ser substituido-->
+        <!--recebe um id como get no href-->
+        <a class="btn btn-sm btn-primary" href="/visualizar.php?id=#ID" >Visualizar</a>         
+       <!-- <form action="/alteraTarefa.php" method="POST" id="form-#ID">
+            hidden escondido
+            <input type="hidden" name="id" value="#ID">
+            <input type="checkbox" name="status" onclick="document.querySelector('#form-#ID').submit()" #MARCADO>
+        </form>     -->
+        <input type="checkbox" name="status" onclick="alterarTarefa(#ID, this)" #MARCADO>  
+        <!--STR REPLACE SUBSTITUI #ID PELO O ID DA TAREFA-->
+    </td>
+</tr>
