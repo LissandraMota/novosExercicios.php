@@ -1,0 +1,23 @@
+{
+    "name": "mayconmoraes-dm/mdmvc",
+    "description": "Microframework MVC para simples implementações com PHP e PDO e Twig",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maycon de Moraes",
+            "email": "mayconmoraes-dm@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Core\\" : "Core/",
+            "App\\" : "Application/"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.0",
+        "php": ">= 7.0"
+
+    }
+}
